@@ -1,0 +1,129 @@
+// VARIABLES
+// COLORS
+$color-light: #fff; // White
+$color-mild: #f7f7f7; // Light gray
+$color-dark: #000; // Black
+
+$color-primary: #fed136; // Yellow
+$color-secondary: #909090; // Dark gray
+
+$color-twitter: #00aced; // Light blue
+$color-facebook: #3b5998; // Dark blue
+$color-pinterest: #cb2028; // Dark red
+$color-googleplus: #da2713; // Light red
+// FONTS
+$font-logo: 'Cookie', cursive; // For logo
+$font-header: 'DM Sans', sans-serif; // For header text
+$font-general: 'DM Serif Display', serif; // For general text
+
+
+// GLOBAL
+a {
+    color: $color-light;
+    text-decoration: none;
+}
+
+body {
+    background: $color-light;
+    margin: 0;
+}
+
+h1 {
+    color: $color-light;
+}
+
+h2, h3 {
+    color: $color-dark;
+}
+
+h4 {
+    color: $color-secondary;
+}
+
+img {
+    object-fit: cover;
+}
+
+p {
+    color: $color-secondary;
+    font-family: $font-general;
+}
+
+ul {
+    list-style: none;
+}
+
+// NAVIGATION
+nav {
+    .logo {
+        color: $color-primary;
+        font-family: $font-logo;
+        font-size: 48px;
+        margin-left: 230px;
+    }
+
+    ul {
+        margin-right: 230px;
+    }
+}
+
+// HEADER
+header {
+    background: $color-dark;
+    position: relative;
+    width: 100%;
+
+    img {
+        opacity: 0.5;
+        width: 100%;
+    }
+}
+
+// FOOTER
+footer {
+    padding-bottom: 48px;
+    padding-top: 48px;
+
+    ul {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        font-size: 0;
+        gap: 10px;
+        justify-content: center;
+        list-style-type: none;
+        
+        .fa-brands {
+            background: $color-dark;
+            border-radius: 100%;
+            color: $color-light;
+            font-size: 30px;
+            height: 60px;
+            line-height: 60px;
+            margin: 48px 15px 48px 0;
+            text-align: center;
+            transition: 0.4s ease;
+            width: 60px;
+
+            &:hover {
+                color: $color-dark
+            }
+        }
+
+        .platform-one:hover {
+            background: $color-twitter;
+        }
+
+        .platform-two:hover {
+            background: $color-facebook;
+        }
+
+        .platform-three:hover {
+            background: $color-pinterest;
+        }
+
+        .platform-four:hover {
+            background: $color-googleplus;
+        }
+    }
+}
